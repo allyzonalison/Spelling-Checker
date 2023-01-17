@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <h1>QUESTION # {{question1.id}}</h1>
+        <hr>
+        <h1>{{question1.question}}</h1>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            <input type="text" id="question1" name="question1" required>
+            <input type="submit">
+        </form>
+    </body>
+</html>
